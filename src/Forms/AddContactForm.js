@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import * as actions from '../Redux/contacts/contacts-actions';
+import { getItems } from '../Redux/contacts/contacts-selector';
 
 export default function Form() {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
-  const items = useSelector(state => state.contacts.items);
+  const items = useSelector(getItems);
   const dispatch = useDispatch();
 
   const handleChange = event => {
