@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactsList from './ContactList/ContactsList';
 import Filter from './Filter/Filter';
-import Form from './Forms/Form';
+import Form from './Forms/AddContactForm';
 import './App.css';
 
 function App() {
